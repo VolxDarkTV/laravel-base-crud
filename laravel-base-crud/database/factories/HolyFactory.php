@@ -17,7 +17,10 @@ class HolyFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'name' => fake() -> firstName(), 
+            'surname' => fake() -> lastName(), 
+            'blessing_date' => fake() -> dateTimeBetween('-1 week', '+1 week'), 
+            'num_miracles' => fake() -> randomDigit(), 
         ];
     }
 }

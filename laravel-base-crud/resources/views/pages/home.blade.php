@@ -5,5 +5,11 @@
 @endsection
 
 @section('main')
-    <h1>Home</h1>
+    <ul>
+        @foreach ($holies as $holy)
+            <li>
+                [{{$holy -> id}}] - {{$holy -> name}}
+            </li>
+        @endforeach
+    </ul>
 @endsection
