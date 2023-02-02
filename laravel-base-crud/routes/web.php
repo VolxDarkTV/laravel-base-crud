@@ -9,3 +9,6 @@ use App\Http\Controllers\MainController;
 // });
 
 Route::get('/', [MainController::class, 'holy']);
+
+// Single Product Show
+Route::get('/holy/{id}', [MainController::class, 'show']);

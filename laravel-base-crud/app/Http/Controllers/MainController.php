@@ -14,4 +14,14 @@ class MainController extends Controller
         ];
         return view('pages/home', $data);
     }
+    public function show($id){
+
+        $holy = Holy::find($id);
+
+        $data = [
+            'holy' => $holy
+        ];
+         
+        return view('pages/holy', $data);
+    }
 }

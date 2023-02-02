@@ -8,7 +8,9 @@
     <ul>
         @foreach ($holies as $holy)
             <li>
-                [{{$holy -> id}}] - {{$holy -> name}}
+                <a href="holy/{{ $holy -> id }}">
+                    [{{$holy -> id}}] - {{$holy -> name}}
+                </a>
             </li>
         @endforeach
     </ul>
