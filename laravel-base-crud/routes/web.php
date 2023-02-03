@@ -8,7 +8,7 @@ use App\Http\Controllers\MainController;
 //     return view('pages/home');
 // });
 
-Route::get('/', [MainController::class, 'holy']);
+Route::get('/', [MainController::class, 'home']) -> name('home');
 
 // Single Product Show
-Route::get('/holy/{id}', [MainController::class, 'show']);
+Route::get('/holy/show{id}', [MainController::class, 'show']) -> name('holy/show');

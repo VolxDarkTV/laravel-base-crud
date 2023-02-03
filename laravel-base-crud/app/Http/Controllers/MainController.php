@@ -7,7 +7,7 @@ use App\Models\Holy;
 
 class MainController extends Controller
 {
-    public function holy(){
+    public function home(){
         $holies = Holy::all();
         $data = [
             'holies' => $holies

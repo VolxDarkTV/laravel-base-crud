@@ -8,7 +8,7 @@
     <ul>
         @foreach ($holies as $holy)
             <li>
-                <a href="holy/{{ $holy -> id }}">
+                <a href="{{ route('holy/show', ['id' => $holy -> id]) }}">
                     [{{$holy -> id}}] - {{$holy -> name}}
                 </a>
             </li>
