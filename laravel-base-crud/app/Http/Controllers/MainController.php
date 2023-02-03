@@ -29,9 +29,29 @@ class MainController extends Controller
     }
 
     // ---Create
+    public function create(){
+
+        return view('pages/create');
+    }
+    public function store(Request $request){
+
+        $data = $request -> all();
+
+        $holy = new Holy();
+
+        $holy -> name = $data['name'];
+        $holy -> surname = $data['surname'];
+        $holy -> blessing_date = $data['blessing_date'];
+        $holy -> num_miracles = $data['num_miracles'];
+        
+        $holy -> save();
+
+        return redirect() -> route('home');
+    }
+
 
     // --- Destroy
-    public function detroy($id){
+    public function destroy($id){
 
         $holy = Holy::find($id);
 
@@ -39,4 +59,6 @@ class MainController extends Controller
 
         return redirect() -> route('home');
     }
+
+
 }
