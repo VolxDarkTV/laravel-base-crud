@@ -8,7 +8,7 @@
         <label for="name">Name</label>
         <input type="text" name="name">
         <br>
-        <label for="surname">Bird place</label>
+        <label for="surname">Surname</label>
         <input type="text" name="surname">
         <br>
         <label for="blessing_date">Blessing date</label>
