@@ -11,11 +11,11 @@
     <ul>
         @foreach ($holies as $holy)
             <li class="d-flex align-items-center">
-                <a class="col-1" href="{{ route('holy/show', ['id' => $holy -> id]) }}">
+                <a class="col-1" href="{{ route('holy.show', ['id' => $holy -> id]) }}">
                     [{{$holy -> id}}] - {{$holy -> name}}
                 </a>
 
-                <a class="card py-1 px-2" href="{{ route('holy/destroy', ['id' => $holy -> id]) }}">X</a>
+                <a class="card py-1 px-2" href="{{ route('holy.destroy', ['id' => $holy -> id]) }}">X</a>
             </li>
         @endforeach
     </ul>

@@ -13,7 +13,7 @@ class MainController extends Controller
         $data = [
             'holies' => $holies
         ];
-        return view('pages/home', $data);
+        return view('pages.home', $data);
     }
 
     // --- Show
@@ -25,13 +25,13 @@ class MainController extends Controller
             'holy' => $holy
         ];
          
-        return view('pages/holy', $data);
+        return view('pages.holy', $data);
     }
 
     // ---Create
     public function create(){
 
-        return view('pages/create');
+        return view('pages.create');
     }
     public function store(Request $request){
 

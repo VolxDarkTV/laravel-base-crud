@@ -12,7 +12,7 @@ Route::get('/', [MainController::class, 'home']) -> name('home');
 
 // Single Product Show
 Route::get('/holy/show{id}', [MainController::class, 'show']) 
-    -> name('holy/show');
+    -> name('holy.show');
 
 // --- CREATE
 Route :: get('/holy/create', [MainController :: class, 'create']) 
@@ -23,4 +23,4 @@ Route :: post('/holy/store', [MainController :: class, 'store'])
 
 // Destroy
 Route::get('/holy/destroy{id}', [MainController::class, 'destroy']) 
-    -> name('holy/destroy');
+    -> name('holy.destroy');
